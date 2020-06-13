@@ -1,26 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Header from "./components/Header/Header";
+import ProjectList from "./components/ProjectsList/ProjectList";
+import About from "./components/About/About";
+import NavLinks from "./components/Header/NavLinks/NavLinks";
+import { findByLabelText } from "@testing-library/react";
+
+const footerStyle = {
+  display: "flex",
+  justifyContent: "flex-end",
+  padding: 5,
+  marginTop: 5,
+  height: "50px",
+};
+
+class App extends Component {
+  navClickHandler = (name) => {
+    const container = document.getElementById(name);
+    if (container) {
+      container.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
+  render() {
+    return (
+      <div className="App">
+        <Header clicked={this.navClickHandler} />
+        <ProjectList />
+        <About />
+        <footer style={footerStyle}>
+          <NavLinks clicked={(e) => this.navClickHandler(e)} />
+        </footer>
+      </div>
+    );
+  }
 }
 
 export default App;

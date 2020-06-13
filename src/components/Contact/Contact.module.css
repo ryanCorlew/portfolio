@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  margin-top: 10rem;
+}
+
+a {
+  text-transform: uppercase;
+  color: #00186f;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+a:visited {
+  color: #00186f;
+}

@@ -1,0 +1,20 @@
+.container {
+  min-height: calc(100vh - 70px);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.content p {
+  text-align: left;
+  max-width: 40rem;
+}
+
+.header {
+  display: flex;
+  margin-top: 10rem;
+}

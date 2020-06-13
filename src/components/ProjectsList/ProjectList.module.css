@@ -1,0 +1,14 @@
+.container {
+  min-height: calc(100vh - 70px);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.header {
+  display: flex;
+}

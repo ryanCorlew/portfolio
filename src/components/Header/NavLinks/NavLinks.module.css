@@ -1,0 +1,25 @@
+.links {
+  display: flex;
+}
+
+.link {
+  margin-left: 20px;
+}
+
+button {
+  background-color: #00186f;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  box-shadow: none;
+  padding: 10px;
+  height: 36px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #00186f;
+  background-color: white;
+  border-color: #00186f;
+}
