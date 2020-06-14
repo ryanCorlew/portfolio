@@ -5,8 +5,10 @@
 .content {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: auto;
   flex-wrap: wrap;
+  width: fit-content;
 }
 
 .content p {
